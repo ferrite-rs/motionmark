@@ -467,23 +467,26 @@ window.benchmarkController = {
     },
 
     determineCanvasSize: function() {
-        var match = window.matchMedia("(max-device-width: 760px)");
-        if (match.matches) {
-            document.body.classList.add("small");
-            return;
-        }
+        // Note: The screensize in Servo cannot be determined this way.
+        // This is hardcoded to "large" instead.
 
-        match = window.matchMedia("(max-device-width: 1600px)");
-        if (match.matches) {
-            document.body.classList.add("medium");
-            return;
-        }
+        // var match = window.matchMedia("(max-device-width: 760px)");
+        // if (match.matches) {
+        //     document.body.classList.add("small");
+        //     return;
+        // }
 
-        match = window.matchMedia("(max-width: 1600px)");
-        if (match.matches) {
-            document.body.classList.add("medium");
-            return;
-        }
+        // match = window.matchMedia("(max-device-width: 1600px)");
+        // if (match.matches) {
+        //     document.body.classList.add("medium");
+        //     return;
+        // }
+
+        // match = window.matchMedia("(max-width: 1600px)");
+        // if (match.matches) {
+        //     document.body.classList.add("medium");
+        //     return;
+        // }
 
         document.body.classList.add("large");
     },

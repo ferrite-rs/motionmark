@@ -133,7 +133,7 @@ button:disabled {
 
 .tree ul li {
     list-style:none;
-    padding: 1em 0 0 0em;
+    padding: 2em 0 0 0em;
 }
 
 .tree > li:last-child {
@@ -202,7 +202,6 @@ label.tree-label {
 }
 
 #intro .start-benchmark {
-    padding: 10vh 0;
     text-align: center;
 }
 
@@ -256,17 +255,7 @@ label.tree-label {
 }
 
 #intro input[type="number"] {
-    width: 50px;
-}
-
-#suites input[type="number"] {
-    display: none;
-    float: right;
-}
-
-#suites input[type="number"].selected {
-    display: inline;
-    margin: 0;
+    width: 10em;
 }
 
 #suites ul ul {
@@ -323,7 +312,6 @@ label.tree-label {
 }
 
 #intro .start-benchmark {
-    padding: 0 0 10vh;
     margin-top: 0;
 }
 
